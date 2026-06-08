@@ -1,5 +1,7 @@
 # solargraph-yard-lint
 
+[![CI](https://github.com/lekemula/solargraph-yard-lint/actions/workflows/ci.yml/badge.svg)](https://github.com/lekemula/solargraph-yard-lint/actions/workflows/ci.yml)
+
 A [Solargraph](https://github.com/castwide/solargraph) plugin that surfaces
 [yard-lint](https://github.com/mensfeld/yard-lint) offenses as LSP diagnostics
 in your editor.
