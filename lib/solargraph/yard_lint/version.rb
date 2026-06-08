@@ -4,7 +4,6 @@
 module Solargraph
   # yard-lint diagnostics plugin for Solargraph.
   module YardLint
-    # Gem version.
     VERSION = '0.1.0'
   end
 end
