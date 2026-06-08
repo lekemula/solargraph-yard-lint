@@ -1,11 +1,13 @@
 # frozen_string_literal: true
 
+# Solargraph language server.
 module Solargraph
+  # yard-lint diagnostics plugin for Solargraph.
   module YardLint
+    # Raised when a requested yard-lint version is not installed.
     class InvalidVersionError < RuntimeError; end
 
     # Utility methods for the yard-lint diagnostics reporter.
-    #
     module Helpers
       module_function
 
@@ -13,8 +15,8 @@ module Solargraph
       # version if _version_ is `nil`.
       #
       # @param version [String, nil]
-      # @raise [InvalidVersionError] if _version_ is not installed
       # @return [void]
+      # @raise [InvalidVersionError] if _version_ is not installed
       def require_yard_lint version = nil
         begin
           gem_path = Gem::Specification.find_by_name('yard-lint', version).full_gem_path

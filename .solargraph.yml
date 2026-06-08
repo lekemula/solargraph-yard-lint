@@ -1,0 +1,21 @@
+---
+include:
+  - "**/*.rb"
+exclude:
+  - "**/spec/**/*"
+  - test/**/*
+  - vendor/**/*
+  - ".bundle/**/*"
+require: []
+domains: []
+plugins:
+  - solargraph-yard-lint
+reporters:
+  - typecheck:strict
+  - rubocop
+  - require_not_found
+  - yard_lint
+formatter:
+  rubocop:
+    cops: all
+max_files: 20000

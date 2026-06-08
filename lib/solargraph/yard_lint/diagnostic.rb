@@ -1,9 +1,10 @@
 # frozen_string_literal: true
 
+# Solargraph language server.
 module Solargraph
+  # yard-lint diagnostics plugin for Solargraph.
   module YardLint
     # Solargraph diagnostic reporter backed by yard-lint.
-    #
     class Diagnostic < Solargraph::Diagnostics::Base
       include Helpers
 
