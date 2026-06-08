@@ -23,13 +23,11 @@ Then `bundle install`.
 
 Add to your project's `.solargraph.yml`:
 
-```yaml
-plugins:
-  - solargraph-yard-lint
-reporters:
-  - rubocop
-  - require_not_found
-  - yard_lint
+```diff
+ plugins:
++  - solargraph-yard-lint
+ reporters:
++  - yard_lint
 ```
 
 Restart your Solargraph language server. YARD documentation offenses will
