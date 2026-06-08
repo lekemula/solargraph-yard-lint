@@ -15,6 +15,7 @@ AllValidators:
     - 'node_modules/**/*'
     - 'spec/**/*'
     - 'test/**/*'
+    - 'lib/**/version.rb'
 
   # Exit code behavior (error, warning, convention, never)
   FailOnSeverity: warning
