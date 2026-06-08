@@ -42,6 +42,21 @@ yard-lint reads files from disk and does not accept stdin, so this reporter
 only lints sources whose buffer contents match the on-disk file. Unsaved
 edits will not produce yard-lint diagnostics until the file is saved.
 
+## Contributing
+
+Bug reports and pull requests are welcome at
+[github.com/lekemula/solargraph-yard-lint](https://github.com/lekemula/solargraph-yard-lint).
+
+```sh
+bundle install
+bundle exec rspec
+bundle exec rubocop
+bundle exec yard-lint lib/
+```
+
+Please run the full check suite locally before opening a PR — CI runs
+the same three commands. New behavior should come with specs.
+
 ## License
 
 MIT
