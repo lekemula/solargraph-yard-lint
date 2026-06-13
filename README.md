@@ -6,6 +6,10 @@ A [Solargraph](https://github.com/castwide/solargraph) plugin that surfaces
 [yard-lint](https://github.com/mensfeld/yard-lint) offenses as LSP diagnostics
 in your editor.
 
+## Demo
+
+https://github.com/lekemula/solargraph-yard-lint/raw/main/doc/solargraph-yard-lint-demo.mp4
+
 ## Installation
 
 Add to your project's `Gemfile`:
