@@ -24,7 +24,7 @@ module Solargraph
 
         require_yard_lint(yard_lint_version)
         result = Solargraph::CHDIR_MUTEX.synchronize do
-          ::Yard::Lint.run(path: source.filename, progress: false)
+          ::Yard::Lint.run(path: source.filename, source: source.code, progress: false)
         end
         return [] if result.clean?
 
@@ -37,8 +37,9 @@ module Solargraph
 
       private
 
-      # yard-lint reads from disk and cannot accept unsaved buffer contents,
-      # so only lint when the source is backed by an on-disk file.
+      # yard-lint requires a single .rb path for config resolution and offense
+      # location reporting. The buffer text is passed via source:, so the file
+      # does not need to exist on disk.
       #
       # @param source [Solargraph::Source]
       # @return [Boolean]
@@ -46,7 +47,7 @@ module Solargraph
         filename = source.filename
         return false if filename.nil? || filename.empty?
 
-        File.file?(filename)
+        filename.end_with?('.rb')
       end
 
       # @return [String]
