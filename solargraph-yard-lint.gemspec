@@ -26,5 +26,5 @@ Gem::Specification.new do |spec|
   spec.require_paths = ['lib']
 
   spec.add_dependency 'solargraph', '>= 0.52.0'
-  spec.add_dependency 'yard-lint', '~> 1.5'
+  spec.add_dependency 'yard-lint', '~> 1.6'
 end
