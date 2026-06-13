@@ -8,7 +8,8 @@ in your editor.
 
 ## Demo
 
-https://github.com/lekemula/solargraph-yard-lint/raw/main/doc/solargraph-yard-lint-demo.mp4
+https://github.com/user-attachments/assets/2bcd3a5a-3e3c-4b26-8667-f4f6c2479ef8
+
 
 ## Installation
 
